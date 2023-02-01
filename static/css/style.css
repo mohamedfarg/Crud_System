@@ -1,0 +1,32 @@
+.product-form {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.product-form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.product-form input[type="text"], .product-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.product-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<div class="product-form">
+    <form method="POST" action="{% url 'add' %}">
+        {% csrf_token %}
+        <label>Name:</label>
+        <input type="text" name="title">
+        <label>Description:</label>
+        <textarea name="description"></textarea>
+        <label>Price:</label>
+        <input type="text" name="price">
+        <input type="submit" value="Add Product">
+    </form>
+</div>
+{% endblock body %}
